@@ -12,7 +12,7 @@ import VideoItem from './VideoItem';
 const Videos: React.FC = observer(() => (
 	<div className={styles.wrapper}>
 		<div className={styles.items}>
-			<VideoItem name={meState.name} stream={meState.stream}/>
+			<VideoItem name={meState.name} stream={meState.stream} muted={true}/>
 
 			<VideoItem
 				name={otherState.otherName}
