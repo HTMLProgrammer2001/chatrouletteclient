@@ -1,0 +1,25 @@
+.wrapper{
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0 auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &>*{
+        margin: .25rem 0;
+    }
+}
+
+.item{
+    width: 100%;
+    border-bottom: 1px solid gray;
+
+    &_name{
+        color: dodgerblue;
+    }
+}
