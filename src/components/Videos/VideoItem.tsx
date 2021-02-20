@@ -16,7 +16,7 @@ const VideoItem: React.FC<IVideoItemProps> = ({name, stream, isLoading = false, 
 	useEffect(() => {
 		if(!videoRef.current || !stream) return;
 		videoRef.current.srcObject = !stream ? null : stream;
-	}, [videoRef.current, stream, isLoading]);
+	}, [stream, isLoading]);
 
 	return (
 		<div className={styles.item}>
